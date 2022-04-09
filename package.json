@@ -1,0 +1,42 @@
+{
+  "name": "node-ipmirror",
+  "version": "1.0.0",
+  "description": "Javascript implementation of IP-Mirror service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "start": "node start.js",
+    "sync:ci": "node script/upload.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayanamitech/node-ipmirror.git"
+  },
+  "keywords": [
+    "geoip",
+    "fastify",
+    "ipmirror"
+  ],
+  "author": "AyanamiTech <ayanami0330@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayanamitech/node-ipmirror/issues"
+  },
+  "homepage": "https://github.com/ayanamitech/node-ipmirror#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "fastify": "^3.27.4",
+    "fastify-cors": "^6.0.3",
+    "fastify-multipart": "^5.3.1",
+    "fastify-static": "^4.6.1",
+    "geoip-lite": "^1.4.4",
+    "qs": "^6.10.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "eslint": "^8.12.0",
+    "form-data": "^4.0.0"
+  }
+}
